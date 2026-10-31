@@ -7,8 +7,9 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'https://nexabank-26mc.onrender.com/swagger-ui/index.html',
-        changeOrigin: true
+        target: 'https://nexabank-26mc.onrender.com',
+        changeOrigin: true,
+        secure: true
       }
     }
   }

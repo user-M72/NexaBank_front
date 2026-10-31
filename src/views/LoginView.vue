@@ -84,7 +84,6 @@
             <button
               type="submit"
               :disabled="loading"
-              @click="formRef?.submit()"
               style="width:100%; height:52px; border:none; border-radius:14px; cursor:pointer;
                      font-size:16px; font-weight:700; color:white; letter-spacing:0.3px;
                      background:linear-gradient(135deg, #3b82f6, #6366f1);
