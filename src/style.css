@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Inter', system-ui, sans-serif;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #060b18;
+  color: #e2e8f0;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0d1526; }
+::-webkit-scrollbar-thumb { background: #1e3a5f; border-radius: 99px; }
+
+/* ─── Glass card ─── */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ─── Gradient text ─── */
+.gradient-text {
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-gold {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Buttons ─── */
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #6366f1) !important;
+  border: none !important;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35) !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 32px rgba(99, 102, 241, 0.5) !important;
+}
+
+/* ─── Bank card ─── */
+.card-visa {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 40%, #1d4ed8 100%);
+}
+.card-mastercard {
+  background: linear-gradient(135deg, #1c0a0a 0%, #7f1d1d 50%, #b91c1c 100%);
+}
+.card-blocked {
+  background: linear-gradient(135deg, #1a1a2e, #16213e) !important;
+  filter: grayscale(0.8);
+}
+
+/* ─── Hover lift ─── */
+.hover-lift {
+  transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.25s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.5);
+}
+
+/* ─── Page transition ─── */
+.page-enter-active, .page-leave-active { transition: opacity 0.25s ease; }
+.page-enter-from, .page-leave-to { opacity: 0; }
+
+/* ─── Sidebar active item ─── */
+.nav-active {
+  background: linear-gradient(90deg, rgba(59,130,246,0.15), rgba(99,102,241,0.1)) !important;
+  border-right: 2px solid #3b82f6;
+  color: #60a5fa !important;
+}
+
+/* ─── Ant Design overrides ─── */
+.ant-input, .ant-input-password, .ant-select-selector, .ant-input-number {
+  background: rgba(255,255,255,0.05) !important;
+  border-color: rgba(255,255,255,0.1) !important;
+  color: #e2e8f0 !important;
+  border-radius: 10px !important;
+}
+.ant-input:focus, .ant-input-focused,
+.ant-input-password:focus-within,
+.ant-select-focused .ant-select-selector {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.15) !important;
+}
+.ant-form-item-label > label {
+  color: #94a3b8 !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+.ant-input-number-input {
+  background: transparent !important;
+  color: #e2e8f0 !important;
+}
+.ant-select-dropdown {
+  background: #0f172a !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  border-radius: 12px !important;
+}
+.ant-select-item {
+  color: #e2e8f0 !important;
+}
+.ant-select-item-option-active {
+  background: rgba(59,130,246,0.1) !important;
+}
+.ant-select-item-option-selected {
+  background: rgba(59,130,246,0.2) !important;
+}
+.ant-modal-content {
+  background: #0d1526 !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  border-radius: 20px !important;
+}
+.ant-modal-header {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255,255,255,0.07) !important;
+}
+.ant-modal-title {
+  color: #e2e8f0 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+.ant-btn-default {
+  background: rgba(255,255,255,0.06) !important;
+  border-color: rgba(255,255,255,0.1) !important;
+  color: #94a3b8 !important;
+}
+.ant-btn-default:hover {
+  border-color: rgba(255,255,255,0.2) !important;
+  color: #e2e8f0 !important;
+}
+.ant-textarea {
+  background: rgba(255,255,255,0.05) !important;
+  border-color: rgba(255,255,255,0.1) !important;
+  color: #e2e8f0 !important;
+  border-radius: 10px !important;
+}
