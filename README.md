@@ -9,12 +9,12 @@
 Веб-интерфейс для банковского приложения **NexaBank**. Работает поверх REST API,
 написанного на Java и Spring Boot: [NexaBank (backend)](https://github.com/user-M72/NexaBank).
 
-🌐 **Live demo:** [nexabank-front.muzaffarazamov007.workers.dev](https://nexabank-front.muzaffarazamov007.workers.dev)
+🌐 **Live demo:** 
+- [NexaBank](https://nexabank-front.muzaffarazamov007.workers.dev)
 
 > Бэкенд работает на бесплатном хостинге: первый запрос (вход или регистрация)
 > может занять до минуты, пока сервер «просыпается».
 
-![Screenshot](docs/screenshot.png)
 
 ---
 
@@ -24,7 +24,7 @@
 
 | Роль | Username | Password |
 |---|---|---|
-| USER | `demo_user` | `DemoUser2026` |
+| USER | `demoAdmin` | `demoAdmin` |
 
 > Это публичная демо-база без реальных данных.
 
