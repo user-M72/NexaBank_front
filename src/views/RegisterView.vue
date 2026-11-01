@@ -73,7 +73,7 @@
 
           <a-form-item style="margin-bottom:0;">
             <button
-              type="button"
+              type="submit"
               :disabled="loading"
               style="width:100%; height:52px; border:none; border-radius:14px; cursor:pointer;
                      font-size:16px; font-weight:700; color:white; letter-spacing:0.3px;
